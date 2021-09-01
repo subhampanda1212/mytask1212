@@ -12,7 +12,8 @@
             <div id="myDIV">
     <br/><br/>
         {% for file in files %}
-      <img src="{{ url_for('upload', filename=file) }}" style="width: 64px">
+              {{uploaded_file.filename}}
+     <! <img src="{{ url_for('upload', filename=file) }}" style="width: 64px">>
     {% endfor %}
     </div>
       
